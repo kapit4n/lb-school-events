@@ -10,21 +10,19 @@
         "credentials": true,
         "maxAge": 86400
       }
-  }
-  },
-  "session": {
-  },
-  "auth": {
-  },
-  "parse": {
-  },
-  "routes": {
-    "loopback#rest": {
-      "paths": ["${restApiRoot}"]
     }
   },
-  "files": {
+  "session": {},
+  "auth": {},
+  "parse": {},
+  "routes": {
+    "loopback#rest": {
+      "paths": [
+        "${restApiRoot}"
+      ]
+    }
   },
+  "files": {},
   "final": {
     "loopback#urlNotFound": {}
   },

@@ -34,5 +34,9 @@
     "dataSource": "db",
     "public": true,
     "options": {}
+  },
+  "student": {
+    "dataSource": "db",
+    "public": true
   }
 }
