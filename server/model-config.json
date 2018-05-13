@@ -5,16 +5,11 @@
       "loopback/server/models",
       "../common/models",
       "./models"
-    ],
-    "mixins": [
-      "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -26,17 +21,18 @@
   },
   "RoleMapping": {
     "dataSource": "db",
-    "public": false,
-    "options": {
-      "strictObjectIDCoercion": true
-    }
+    "public": false
   },
   "Role": {
     "dataSource": "db",
     "public": false
   },
-  "gestion": {
+  "Email": {
+    "dataSource": "emailDs"
+  },
+  "user": {
     "dataSource": "db",
-    "public": true
+    "public": true,
+    "options": {}
   }
 }

@@ -1,9 +1,23 @@
-'use strict';
+// Copyright IBM Corp. 2014,2015. All Rights Reserved.
+// Node module: loopback-example-user-management
+// This file is licensed under the MIT License.
+// License text available at https://opensource.org/licenses/MIT
 
 var loopback = require('loopback');
 var boot = require('loopback-boot');
+var path = require('path');
+var bodyParser = require('body-parser');
 
 var app = module.exports = loopback();
+
+// configure view handler
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
+// configure body parser
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(loopback.token());
 
 app.start = function() {
   // start the web server
