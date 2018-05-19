@@ -1,2 +1,20 @@
 <h1>Registration verified successfully</h1>
-You are now ready to <a href="/">log in</a>.
+You are now ready to
+<section>
+    <form action="/login" method="post">
+        <fieldset>
+            <legend>Login form</legend>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="<%= email %>" />
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password" value="password" />
+            </div>
+            <div>
+                <input type="submit" value="Login" />
+            </div>
+        </fieldset>
+    </form>
+</section>
