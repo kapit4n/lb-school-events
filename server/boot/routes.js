@@ -20,7 +20,9 @@ module.exports = function(app) {
 
   //verified
   app.get('/verified', function(req, res) {
-    res.render('verified');
+    res.render('verified', {
+      email: req.param('email')
+    });
   });
 
   //log a user in
