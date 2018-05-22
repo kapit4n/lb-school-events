@@ -10,6 +10,10 @@ var senderAddress = "noreply@loopback.com"; //Replace this address with your act
 module.exports = function(User) {
   //send verification email after registration
   User.afterRemote('create', function(context, user, next) {
+    console.log("Send verification email after registration");
+    //console.log(context);
+    console.log(user);
+
     var options = {
       type: 'email',
       to: user.email,
@@ -17,10 +21,12 @@ module.exports = function(User) {
       subject: 'Thanks for registering.',
       template: path.resolve(__dirname, '../../server/views/verify.ejs'),
       redirect: '/verified',
+      //redirect: 'http://localhost:4200/login?email=' + user.email,
       user: user
     };
 
     user.verify(options, function(err, response) {
+      console.log("This is verify method calling");
       if (err) {
         User.deleteById(user.id);
         return next(err);
