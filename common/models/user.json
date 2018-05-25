@@ -6,7 +6,16 @@
   "emailVerificationRequired": true,
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "teachers": {
+      "type": "hasOne",
+      "model": "teacher",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "READ",
