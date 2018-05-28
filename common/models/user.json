@@ -14,6 +14,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "parents": {
+      "type": "hasOne",
+      "model": "parent",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [
