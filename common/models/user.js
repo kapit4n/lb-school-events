@@ -20,8 +20,8 @@ module.exports = function(User) {
       from: senderAddress,
       subject: 'Thanks for registering.',
       template: path.resolve(__dirname, '../../server/views/verify.ejs'),
-      redirect: '/verified',
-      //redirect: 'http://localhost:4200/login?email=' + user.email,
+      //redirect: '/verified',
+      redirect: 'http://localhost:4200/user-first-time/' + user.email,
       user: user
     };
 
