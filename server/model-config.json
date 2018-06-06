@@ -46,5 +46,9 @@
   "parent": {
     "dataSource": "db",
     "public": true
+  },
+  "course": {
+    "dataSource": "db",
+    "public": true
   }
 }
