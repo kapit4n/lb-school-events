@@ -13,7 +13,7 @@
     "details": {
       "type": "string"
     },
-    "isAchived": {
+    "isArchived": {
       "type": "boolean",
       "default": false
     }
