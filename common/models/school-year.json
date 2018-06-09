@@ -30,7 +30,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "courses": {
+      "type": "hasMany",
+      "model": "course",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
