@@ -23,7 +23,7 @@
     "school-year": {
       "type": "belongsTo",
       "model": "school-year",
-      "foreignKey": "",
+      "foreignKey": "schoolYearId",
       "options": {
         "nestRemoting": true
       }
