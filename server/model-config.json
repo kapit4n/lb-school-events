@@ -58,5 +58,9 @@
   "course-year": {
     "dataSource": "db",
     "public": true
+  },
+  "course-student": {
+    "dataSource": "db",
+    "public": true
   }
 }
