@@ -66,5 +66,9 @@
   "student-parent": {
     "dataSource": "db",
     "public": true
+  },
+  "course-teacher": {
+    "dataSource": "db",
+    "public": true
   }
 }

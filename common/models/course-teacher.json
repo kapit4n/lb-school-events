@@ -1,0 +1,34 @@
+{
+  "name": "course-teacher",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "date": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "course-year": {
+      "type": "belongsTo",
+      "model": "course-year",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "teacher": {
+      "type": "belongsTo",
+      "model": "teacher",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
