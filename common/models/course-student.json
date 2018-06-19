@@ -12,17 +12,17 @@
   },
   "validations": [],
   "relations": {
-    "course": {
+    "student": {
       "type": "belongsTo",
-      "model": "course",
+      "model": "student",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
       }
     },
-    "student": {
+    "course-year": {
       "type": "belongsTo",
-      "model": "student",
+      "model": "course-year",
       "foreignKey": "",
       "options": {
         "nestRemoting": true
