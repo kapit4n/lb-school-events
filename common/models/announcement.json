@@ -27,7 +27,16 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "school-year": {
+      "type": "belongsTo",
+      "model": "school-year",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
