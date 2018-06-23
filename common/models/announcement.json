@@ -1,0 +1,33 @@
+{
+  "name": "announcement",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "details": {
+      "type": "string"
+    },
+    "isPublished": {
+      "type": "boolean"
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "validDate": {
+      "type": "date"
+    },
+    "expirationDate": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

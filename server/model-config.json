@@ -70,5 +70,9 @@
   "course-teacher": {
     "dataSource": "db",
     "public": true
+  },
+  "announcement": {
+    "dataSource": "db",
+    "public": true
   }
 }
