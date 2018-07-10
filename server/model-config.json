@@ -74,5 +74,9 @@
   "announcement": {
     "dataSource": "db",
     "public": true
+  },
+  "announcement2": {
+    "dataSource": "db",
+    "public": true
   }
 }
