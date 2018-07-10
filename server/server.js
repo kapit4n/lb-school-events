@@ -38,6 +38,20 @@ boot(app, __dirname, function(err) {
   if (err) throw err;
 
   // start the server if `$ node server.js`
-  if (require.main === module)
-    app.start();
+  if (require.main === module) {
+    //app.start();
+
+    app.io = require('socket.io')(app.start());
+
+    app.io.on('connect', function (socket) {
+      console.log('a user connected');
+      socket.on('message', function (msg) {
+        console.log('message: ' + msg);
+        app.io.emit('message', msg);
+      });
+      socket.on('disconnect', function () {
+        console.log('user disconnected');
+      });
+    });
+  }
 });
