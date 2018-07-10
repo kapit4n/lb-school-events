@@ -1,0 +1,27 @@
+{
+"name": "announcement2",
+"base": "PersistedModel",
+"idInjection": true,
+"options": {
+"validateUpsert": true
+},
+"properties": {
+"title": {
+"type": "string",
+"required": true
+},
+"details": {
+"type": "string"
+},
+"startDate": {
+"type": "date"
+},
+"endDate": {
+"type": "date"
+}
+},
+"validations": [],
+"relations": {},
+"acls": [],
+"methods": {}
+}
