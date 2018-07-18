@@ -78,5 +78,9 @@
   "announcement2": {
     "dataSource": "db",
     "public": true
+  },
+  "follow-up": {
+    "dataSource": "db",
+    "public": true
   }
 }

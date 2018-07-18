@@ -1,0 +1,53 @@
+{
+  "name": "follow-up",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "number"
+    },
+    "registeredDate": {
+      "type": "date",
+      "required": true
+    },
+    "assignment": {
+      "type": "string"
+    },
+    "isAbsent": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "isDelayed": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "historyDetails": {
+      "type": "string"
+    },
+    "observations": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "school-year": {
+      "type": "belongsTo",
+      "model": "school-year",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
