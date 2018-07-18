@@ -46,6 +46,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "student": {
+      "type": "belongsTo",
+      "model": "student",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
