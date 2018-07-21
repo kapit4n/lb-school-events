@@ -82,5 +82,13 @@
   "follow-up": {
     "dataSource": "db",
     "public": true
+  },
+  "question": {
+    "dataSource": "db",
+    "public": true
+  },
+  "answer": {
+    "dataSource": "db",
+    "public": true
   }
 }
