@@ -25,6 +25,14 @@
     "endDate": {
       "type": "date",
       "required": true
+    },
+    "courseMultiSelect": {
+      "type": [
+        "object"
+      ]
+    },
+    "createdBy": {
+      "type": "string"
     }
   },
   "validations": [],
