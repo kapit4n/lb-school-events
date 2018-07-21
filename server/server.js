@@ -54,6 +54,11 @@ boot(app, __dirname, function(err) {
         console.log('followUp: ' + msg);
         app.io.emit('followUp', msg);
       });
+      
+      socket.on('anns', function (msg) {
+        console.log('Ann: ' + msg);
+        app.io.emit('anns', msg);
+      });
 
       socket.on('disconnect', function () {
         console.log('user disconnected');
