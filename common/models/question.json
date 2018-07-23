@@ -30,6 +30,22 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "parent": {
+      "type": "belongsTo",
+      "model": "parent",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "teacher": {
+      "type": "belongsTo",
+      "model": "teacher",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
