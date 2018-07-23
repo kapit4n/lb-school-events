@@ -46,6 +46,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "course": {
+      "type": "belongsTo",
+      "model": "course",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
