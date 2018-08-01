@@ -55,6 +55,11 @@ boot(app, __dirname, function(err) {
         app.io.emit('followUp', msg);
       });
       
+      socket.on('followUpRead', function (msg) {
+        console.log('followUpRead: ' + msg);
+        app.io.emit('followUpRead', msg);
+      });
+      
       socket.on('anns', function (msg) {
         console.log('Ann: ' + msg);
         app.io.emit('anns', msg);
