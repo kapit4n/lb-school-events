@@ -32,6 +32,14 @@
       "options": {
         "nestRemoting": true
       }
+    },
+    "notifications": {
+      "type": "hasMany",
+      "model": "notification",
+      "foreignKey": "",
+      "options": {
+        "nestRemoting": true
+      }
     }
   },
   "acls": [],
