@@ -18,7 +18,7 @@ module.exports = function(User) {
       type: 'email',
       to: user.email,
       from: senderAddress,
-      subject: 'Thanks for registering.',
+      subject: 'Gracias por registrarse a Vocero Escolar.',
       template: path.resolve(__dirname, '../../server/views/verify.ejs'),
       //redirect: '/verified',
       redirect: 'http://localhost:4200/user-first-time/' + user.email,
@@ -32,15 +32,15 @@ module.exports = function(User) {
         return next(err);
       }
       context.res.render('response', {
-        title: 'Signed up successfully',
-        content: 'Please check your email and click on the verification link ' +
-            'before logging in.',
+        title: 'Registrado exitosamente',
+        content: 'Porfavor revise su bandeja de correo electronico y abra el enlance de bienvenida ' +
+            'antes de iniciar sesión.',
         redirectTo: '/',
-        redirectToLinkText: 'Log in'
+        redirectToLinkText: 'Iniciar Sesión'
       });
     });
   });
-  
+
   // Method to render
   User.afterRemote('prototype.verify', function(context, user, next) {
     context.res.render('response', {
